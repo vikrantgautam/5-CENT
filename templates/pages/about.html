@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static%}
+{% block title %} About {% endblock %}
+{% block content %}
+<section id="showcase-inner" class="py-5 text-white">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-12">
+          <h1 class="display-4">About 5 CENT</h1>
+          <p class="lead">An Online Ex-change Store</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Breadcrumb -->
+  <section id="bc" class="mt-3">
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="{%url 'index'%}">
+              <i class="fas fa-home"></i> Home</a>
+          </li>
+          <li class="breadcrumb-item active"> About</li>
+        </ol>
+      </nav>
+    </div>
+  </section>
+
+  <section id="about" class="py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>You get to find your perfect second hand item here </h2>
+          <p class="lead">5 CENT is an online exchange store founded in 2021.</p>
+          <img src="assets/img/about.jpg" alt="">
+          <p class="mt-4">The objective of project on 5 CENT Store is to develop a GUI based automated system,
+                          which will cover all the information related to the all products which is used in our daily life.
+                          For example – Mobiles Phones, Laptops, Clothes, Books, Electronic Items and many more.
+                          So by this GUI based automated system a user wants to purchase something then it only a mouse click away to purchase these products.
+          </p>
+
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <img class="card-img-top" src="{% static 'img/realtors/stonks.jpg'%}" alt="Seller of the month">
+            <div class="card-body">
+              <h5 class="card-title">Creator</h5>
+              <h6 class="text-secondary">Vikrant Gautam</h6>
+              <p class="card-text">vikrantgautam947@gmail.com
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="bg-dark text-white text-center">
+    <h2 class="display-4">We Work For You</h2>
+    <h4>We provide you the best deals available on the Internet.</h4>
+    <hr>
+    <a href="{%url 'listings'%}" class="btn btn-secondary text-white btn-lg">View Our Featured Listings</a>
+  </section>
+
+{% endblock %}
