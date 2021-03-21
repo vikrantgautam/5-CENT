@@ -10,6 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+import django_heroku
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -154,3 +155,6 @@ EMAIL_HOST_PASSWORD = 'qyumxrkziqjxlbro'
 EMAIL_USE_TLS = True
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Activate Django-Heroku.
+django_heroku.settings(locals())

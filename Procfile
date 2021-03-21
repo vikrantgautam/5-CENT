@@ -1,0 +1,1 @@
+web: gunicorn B-S-master.wsgi
