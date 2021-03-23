@@ -1,1 +1,1 @@
-web: gunicorn B-S-master.wsgi
+ web: gunicorn BS.wsgi
