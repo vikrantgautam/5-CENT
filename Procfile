@@ -1,1 +1,2 @@
- webt  guni  *corn BS.wsgi
+web: gunicorn BS.wsgi
+
