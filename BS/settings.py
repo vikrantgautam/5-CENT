@@ -26,7 +26,7 @@ SECRET_KEY = '_!3=&0ga*0isp#@5f)qj5nd#8xg74of5h&!$6pm+z55!0n)ox$'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [centstore.herokuapp.com]
+ALLOWED_HOSTS = ['centstore.herokuapp.com']
 
 
 # Application definition
@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
+    
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.humanize',
@@ -56,6 +57,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+     
 ]
 
 ROOT_URLCONF = 'BS.urls'
